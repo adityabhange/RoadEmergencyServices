@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: com.eleraning.backend.BackendApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.18 s <<< FAILURE! - in com.eleraning.backend.BackendApplicationTests
+contextLoads  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+com.eleraning.backend.controller.UserController#getUserLogin(User)
+to {POST [/api/login]}: There is already 'adminController' bean method
+com.eleraning.backend.controller.AdminController#getAdminLogin(Admin) mapped.
+Caused by: java.lang.IllegalStateException: 
+Ambiguous mapping. Cannot map 'userController' method 
+com.eleraning.backend.controller.UserController#getUserLogin(User)
+to {POST [/api/login]}: There is already 'adminController' bean method
+com.eleraning.backend.controller.AdminController#getAdminLogin(Admin) mapped.
+

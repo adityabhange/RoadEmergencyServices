@@ -1,0 +1,8 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.heading {
+  color: #f02935;
+}
